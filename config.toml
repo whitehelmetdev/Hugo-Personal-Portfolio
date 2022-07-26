@@ -1,6 +1,7 @@
 baseURL = 'https://wilsonlaiwx.github.io/whitehelmetdev.github.io/'
 languageCode = 'en-us'
 title = "Wilson's Portfolio"
+googleAnalytics = "UA-xxxxxxxxxxxx"
 theme = "basic"
 [params]
   author = "Wilson Lai"

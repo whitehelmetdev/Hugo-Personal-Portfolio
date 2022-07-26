@@ -1,12 +1,12 @@
 ---
 title: "Awesomeco"
 draft: false
+image: //via.placeholder.com/640x150
+alt-text: "Awesomeco screenshot"
+summary: "Summary of the AwesomeCo project"
+tech_used:
+- Kali Linux
+- Tails OS
+- Burp Suite
 ---
-
-![alt](//via.placeholder.com/640x150)
-
-Description...
-### Tech used
-* Hugo
-* PHP
-* React
+Description of the Awesomeco project...
