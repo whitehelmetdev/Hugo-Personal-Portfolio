@@ -4,7 +4,7 @@
       <h2>Presentations</h2>
       <ul>
         {{ range (where .Site.RegularPages "Type" "in" "presentations") }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
     </section>

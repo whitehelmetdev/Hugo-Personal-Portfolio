@@ -4,7 +4,7 @@
     <h2>Projects</h2>
     <ul>
       {{ range (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
   </section>
