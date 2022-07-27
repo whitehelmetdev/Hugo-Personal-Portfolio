@@ -2,6 +2,6 @@
   {{ .Content }}
   <h2>Most Recent Project</h2>
   {{ range first 1 (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
   {{ end }}
 {{ end }}
