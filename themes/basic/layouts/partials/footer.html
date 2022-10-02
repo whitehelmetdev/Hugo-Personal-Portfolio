@@ -1,3 +1,8 @@
 <footer>
-  <small>Copyright {{now.Format "2006"}} Me.</small>
+  {{- partial "socials.html" . -}}
+  <small>Copyright {{now.Format "2006"}} {{ .Site.Params.author }}.</small>
+  <p>Powered by</p>
+    <a href="https://gohugo.io">
+      <img src="{{ "img/hugo-logo-wide.png" |relURL }}" width="128" height="38">
+    </a>
 </footer>

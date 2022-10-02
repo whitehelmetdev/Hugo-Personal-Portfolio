@@ -8,5 +8,7 @@ tech_used:
 - Linux
 - React
 - Hugo
+keywords:
+- jabberworky
 ---
 Description of the Jabberwocky project...

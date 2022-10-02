@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "private": true,
+  "scripts": {
+    "hugo-build": "hugo --cleanDestinationDir",
+    "hugo-server": "hugo server --disableFastRender",
+    "webpack": "webpack",
+    "webpack-watch": "webpack --watch",
+    "dev": "npm-run-all webpack --parallel webpack-watch hugo-serrver",
+    "build": "npm-run-all webpack hugo-server"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lunr": "^2.3.9"
+  }
+}

@@ -8,5 +8,7 @@ tech_used:
 - Kali Linux
 - Tails OS
 - Burp Suite
+keywords:
+- awesomeco
 ---
 Description of the Awesomeco project...

@@ -1,6 +1,8 @@
 ---
 title: "Tryhackme"
 draft: false
+keywords:
+- tryhackme
 ---
 
 ![alt](//via.placeholder.com/640x150)

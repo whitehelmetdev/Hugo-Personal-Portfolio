@@ -4,4 +4,8 @@
   {{ range first 1 (where .Site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
   <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
   {{ end }}
+  <h2>Latest Blog Post</h2>
+  {{ range first 1 (where .Site.RegularPages "Type" "in" "posts").ByDate.Reverse }}
+  <li><a href="{{ .RelPermalink | relURL }}">{{ .Title }}</a></li>
+  {{ end }}
 {{ end }}

@@ -3,6 +3,22 @@ languageCode = 'en-us'
 title = "Wilson's Portfolio"
 googleAnalytics = "UA-xxxxxxxxxxxx"
 theme = "basic"
+disqusShortname = "whitehelmetdev"
+Paginate = 10
 [params]
   author = "Wilson Lai"
   description = "My Portfolio Site"
+  keywords = "portfolio"
+  gh_url = "https://api.github.com/users"
+  gh_user = "whitehelmetdev"
+[permalinks]
+  posts = "posts/:year/:month/:slug/"
+  year = "/posts/:slug/"
+  month = "/posts/:slug/"
+  tag = "/tags/:slug/"
+  category = "/categories/:slug/"
+[taxonomies]
+  year = "year"
+  month = "month"
+  tag = "tags"
+  category = "categories"

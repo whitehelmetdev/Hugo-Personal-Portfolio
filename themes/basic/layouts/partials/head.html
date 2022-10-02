@@ -15,5 +15,21 @@
   {{- else -}}
     {{ .Site.Params.description }}
   {{- end -}}">
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <meta name="keywords" content="
+  {{- with .Page.Keywords -}}
+    {{ . }}
+  {{- else -}}
+    {{ .Site.Params.keywords }}
+  {{- end -}}">
+  {{ $css:= resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+  {{ range .AlternativeOutputFormats -}}
+    {{- $link := `<link rel="%s" type="%s" href="%s" title="%s">` -}}
+    {{- $title := printf "%s - %s" $.Page.Title $.Site.Title -}}
+    {{- if $.Page.IsHome -}}
+      {{ $title = $.Site.Title }}
+    {{- end -}}
+    {{ printf $link .Rel .MediaType.Type .Permalink $title | safeHTML }}
+  {{- end -}}
 </head>
